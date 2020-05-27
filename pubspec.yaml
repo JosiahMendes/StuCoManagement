@@ -1,4 +1,4 @@
-name: checkout
+name: stuco2
 description: A new Flutter project.
 
 # The following defines the version and build number for your application.
@@ -19,7 +19,13 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-  cloud_firestore: ^0.8.2
+  cloud_firestore: ^0.13.6
+  firebase_auth: ^0.16.1
+  flutter_slidable: ^0.5.4
+  charts_flutter: ^0.9.0
+
+
+
 
 dev_dependencies:
   flutter_test:
@@ -31,7 +37,10 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
+  assets:
+    - images/YCIS-SC-logo.jpg
+    - images/qrcode.jpg
+    
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -47,6 +56,54 @@ flutter:
 
   # For details regarding adding assets from package dependencies, see
   # https://flutter.io/assets-and-images/#from-packages
+
+  fonts:
+    - family: Raleway
+      fonts:
+         - asset: fonts/Raleway-Regular.ttf
+         - asset: fonts/Raleway-Italic.ttf
+           style: italic
+         - asset: fonts/Raleway-Bold.ttf
+           weight: 700
+         - asset: fonts/Raleway-SemiBold.ttf
+           weight: 600
+         - asset: fonts/Raleway-Black.ttf
+           weight: 900
+         - asset: fonts/Raleway-ExtraBold.ttf
+           weight: 800
+         - asset: fonts/Raleway-light.ttf
+           weight: 300
+         - asset: fonts/Raleway-Medium.ttf
+           weight: 500
+         - asset: fonts/Raleway-Thin.ttf
+           weight: 100
+         - asset: fonts/Raleway-ExtraLight.ttf
+           weight: 200
+         - asset: fonts/Raleway-BoldItalic.ttf
+           weight: 700
+           style: italic
+         - asset: fonts/Raleway-SemiBoldItalic.ttf
+           weight: 600
+           style: italic
+         - asset: fonts/Raleway-BlackItalic.ttf
+           weight: 900
+           style: italic
+         - asset: fonts/Raleway-ExtraBoldItalic.ttf
+           weight: 800
+           style: italic
+         - asset: fonts/Raleway-lightItalic.ttf
+           weight: 300
+           style: italic
+         - asset: fonts/Raleway-MediumItalic.ttf
+           weight: 500
+           style: italic
+         - asset: fonts/Raleway-ThinItalic.ttf
+           weight: 100
+           style: italic
+         - asset: fonts/Raleway-ExtraLightItalic.ttf
+           weight: 200
+           style: italic
+
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
